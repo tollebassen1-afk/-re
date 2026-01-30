@@ -1,0 +1,149 @@
+/* ---- General page settings ---- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #0b0c10;                 /* Dark background */
+    color: #c5c6c7;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    margin: 10px 0;
+    color: #66fcf1;
+}
+
+/* Screens */
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+.screen.hidden {
+    display: none;
+}
+
+/* Homepage */
+#homepage p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.gamemodeBtn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #45a29e;
+    color: #0b0c10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.gamemodeBtn:hover {
+    background: #66fcf1;
+}
+
+/* Game screen */
+#game {
+    align-items: center;
+}
+
+/* HUD – score display */
+#hud {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Play controls */
+#playControls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#playBtn, #replayBtn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #45a29e;
+    color: #0b0c10;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#playBtn:hover, #replayBtn:hover {
+    background: #66fcf1;
+}
+#replayBtn:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+
+#options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.optionBtn {
+    padding: 10px;
+    font-size: 1rem;
+    background: #1f2833;
+    color: #c5c6c7;
+    border: 2px solid #45a29e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.optionBtn:hover {
+    background: #45a29e;
+    color: #0b0c10;
+}
+.optionBtn:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+
+#feedback {
+    font-size: 1.2rem;
+    text-align: center;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+
+#nextBtn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #ff2e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#nextBtn:hover {
+    background: #ff6b6b;
+}
+
+
+#backBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #666;
+    color: #c5c6c7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#backBtn:hover {
+    background: #999;
+}

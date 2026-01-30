@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Ear Training Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Music Ear Training Game</h1>
+    <div id="homepage" class="screen">
+        <p>Select a gamemode:</p>
+        <button id="intervalsBtn" class="gamemodeBtn">Intervals</button>
+        <button id="chords3Btn" class="gamemodeBtn">Chords (3 notes)</button>
+        <button id="chords4Btn" class="gamemodeBtn">Chords (4 notes)</button>
+    </div>
+    <div id="game" class="screen hidden">
+        <div id="hud">
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="playControls">
+            <button id="playBtn">Play Sound</button>
+            <button id="replayBtn" disabled>Replay Sound</button>
+        </div>
+        <div id="options"></div>
+        <div id="feedback"></div>
+        <button id="nextBtn" class="hidden">Next Question</button>
+        <button id="backBtn">Back to Homepage</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
